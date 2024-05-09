@@ -1,6 +1,6 @@
 ```bash
 rem 新建一个txt文件，复制全部代码保存，重命名为.bat后缀的文件即可使用。
-rem 按理说不限制上传文件大小，支持txt、yaml等文本文件，支持csc文件。
+rem 按理说不限制上传文件大小，支持txt、yaml等文本文件，支持csv文件。
 rem 要求所有文件的编码为utf8，否则会出现中文和符号乱码。
 rem 实测win10自带的powershell版本5.1上传中文乱码，最好powershell版本7+，且不改动pwsh.exe的命名。
 rem 需要有github账号和具有gist权限的access_token。
