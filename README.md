@@ -16,7 +16,7 @@ rem 设置上传到指定gist的gistId，不填此项则创建新的gist
 set GIST_ID=
 
 rem 设置上传后的Gist描述
-set "GIST_DESCRIPTION=你的gist描述"
+set GIST_DESCRIPTION=你的gist描述
 
 rem 检查是否有文件拖入
 if "%~1"=="" (
