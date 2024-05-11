@@ -59,7 +59,7 @@ pwsh -Command ^
 
     "Write-Output ('')" ^
 
-    "Write-Output ('请保留你gistId：	' + $gistId + '	填入本代码以便下次上传文件！')" ^
+    "Write-Output ('请保留你gistId：	' + $gistId + '	填入本代码以便覆盖同名文件！')" ^
 	
 endlocal
 echo.
