@@ -58,7 +58,7 @@ pwsh -Command ^
             "$response = Invoke-RestMethod -Uri ('https://api.github.com/gists/' + $gistId) -Headers @{ Authorization = 'token ' + $token } -Method PATCH -ContentType 'application/json' -Body ($update | ConvertTo-Json);" ^
         "}" ^
     "}" ^
-    "Write-Output ('文件上传到Gist完成！URL: https://gist.github.com/' + $gistId)"; ^
+    "Write-Output ('文件上传到Gist完成！Gist URL: https://gist.github.com/' + $gistId)"; ^
     "Write-Output ('')"; ^
     "Write-Output ('你的文件URL: https://gist.githubusercontent.com/%USER_NAME%/' + $gistId + '/raw/' + $fileName)"; ^
     "Write-Output ('')"; ^
