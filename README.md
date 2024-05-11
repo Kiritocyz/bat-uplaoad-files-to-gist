@@ -62,7 +62,7 @@ pwsh -Command ^
     "Write-Output ('')"; ^
     "Write-Output ('你的文件URL: https://gist.githubusercontent.com/%USER_NAME%/' + $gistId + '/raw/' + $fileName)"; ^
     "Write-Output ('')"; ^
-    "Write-Output ('NOTE: 中文文件名需要URLEncode处理')"; ^
+    "Write-Output ('NOTE: 中文文件名需要URLEncode处理后才能访问，出现红字或者URL不完整可能上传失败了')"; ^
     "Write-Output ('')"; ^
     "Write-Output ('请保留你gistId: ' + $gistId + ' 将之填入本代码以便上传覆盖同名文件！')"; ^
     "Write-Output ('')"; ^
