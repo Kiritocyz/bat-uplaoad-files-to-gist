@@ -1,3 +1,4 @@
+```bash
 @echo off
 chcp 65001
 echo.
@@ -65,3 +66,4 @@ echo.
 echo 上传完成！5秒后自动关闭窗口……
 timeout /t 5 >nul
 exit
+```
