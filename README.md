@@ -15,6 +15,9 @@ echo 实测win10自带的powershell版本5.1上传中文乱码，最好升级你
 echo.
 echo 确认你的powershell目录存在的是pwsh.exe还是powershell.exe，若是后者，将代码默认的pwsh替换成powershell。
 echo.
+rem 替换USER_NAME为你的GitHub用户名 
+set USER_NAME=你的GitHub用户名
+
 rem 替换YOUR_ACCESS_TOKEN为你的GitHub访问令牌
 set TOKEN=YOUR_ACCESS_TOKEN
 
@@ -22,7 +25,7 @@ rem 设置上传到指定gist的gistId，不填此项则创建新的gist
 set GIST_ID=
 
 rem 设置上传后的Gist描述
-set GIST_DESCRIPTION=你的gist描述
+set GIST_DESCRIPTION=你的Gist描述
 
 rem 检查是否有文件拖入
 if "%~1"=="" (
@@ -55,11 +58,14 @@ pwsh -Command ^
             "$response = Invoke-RestMethod -Uri ('https://api.github.com/gists/' + $gistId) -Headers @{ Authorization = 'token ' + $token } -Method PATCH -ContentType 'application/json' -Body ($update | ConvertTo-Json);" ^
         "}" ^
     "}" ^
-    "Write-Output ('文件上传到Gist完成！	URL: https://gist.github.com/' + $gistId)" ^
-
-    "Write-Output ('')" ^
-
-    "Write-Output ('请保留你gistId：	' + $gistId + '	填入本代码以便覆盖同名文件！')" ^
+    "Write-Output ('文件上传到Gist完成！URL: https://gist.github.com/' + $gistId)"; ^
+    "Write-Output ('')"; ^
+    "Write-Output ('你的文件URL: https://gist.githubusercontent.com/%USER_NAME%/' + $gistId + '/raw/' + $fileName)"; ^
+    "Write-Output ('')"; ^
+    "Write-Output ('NOTE: 中文文件名需要URLEncode处理')"; ^
+    "Write-Output ('')"; ^
+    "Write-Output ('请保留你gistId: ' + $gistId + ' 将之填入本代码以便上传覆盖同名文件！')"; ^
+    "Write-Output ('')"; ^
 	
 endlocal
 echo.
