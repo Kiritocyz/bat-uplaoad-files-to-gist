@@ -3,18 +3,17 @@
 chcp 65001
 echo.
 setlocal
-echo 你需要有github账号和具有gist权限的access_token;
-echo.
-echo 新建一个txt文件，复制全部代码，将上述的access_token填入代码中，重命名为.bat后缀的文件即可使用;
-echo.
-echo 按理说不限制上传文件大小，支持txt、yaml等文本文件，支持csv文件;
-echo.
-echo 要求所有文件的编码为utf8，否则会出现中文和符号乱码;
-echo.
-echo 实测win10自带的powershell版本5.1上传中文乱码，最好升级你的powershell版本到7+;
-echo.
-echo 确认你的powershell目录存在的是pwsh.exe还是powershell.exe，若是后者，将代码默认的pwsh替换成powershell。
-echo.
+rem 你需要有github账号和具有gist权限的access_token;
+
+rem 新建一个txt文件，复制全部代码，将上述的access_token填入代码中，重命名为.bat后缀的文件即可使用;
+
+rem 按理说不限制上传文件大小，支持txt、yaml等文本文件，支持csv文件;
+
+rem 要求所有文件的编码为utf8，否则会出现中文和符号乱码;
+
+rem 实测win10自带的powershell版本5.1上传中文乱码，最好升级你的powershell版本到7+;
+
+rem 确认你的powershell目录存在的是pwsh.exe还是powershell.exe，若是后者，将代码默认的pwsh替换成powershell。
 
 rem 替换USER_NAME为你的GitHub用户名 
 set USER_NAME=你的GitHub用户名
