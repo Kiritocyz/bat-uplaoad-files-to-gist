@@ -15,6 +15,7 @@ echo 实测win10自带的powershell版本5.1上传中文乱码，最好升级你
 echo.
 echo 确认你的powershell目录存在的是pwsh.exe还是powershell.exe，若是后者，将代码默认的pwsh替换成powershell。
 echo.
+
 rem 替换USER_NAME为你的GitHub用户名 
 set USER_NAME=你的GitHub用户名
 
