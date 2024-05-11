@@ -15,7 +15,7 @@ rem 实测win10自带的powershell版本5.1上传中文乱码，最好升级你�
 
 rem 确认你的powershell目录存在的是pwsh.exe还是powershell.exe，若是后者，将代码默认的pwsh替换成powershell。
 
-rem 替换USER_NAME为你的GitHub用户名 
+rem 替换USER_NAME为你的GitHub用户名，用于拼接你的文件URL 
 set USER_NAME=你的GitHub用户名
 
 rem 替换YOUR_ACCESS_TOKEN为你的GitHub访问令牌
