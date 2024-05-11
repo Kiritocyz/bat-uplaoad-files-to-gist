@@ -63,7 +63,7 @@ pwsh -Command ^
 	
 endlocal
 echo.
-echo 上传完成！5秒后自动关闭窗口……
-timeout /t 5 >nul
+echo 上传完成！10秒后自动关闭窗口……
+timeout /t 10 >nul
 exit
 ```
