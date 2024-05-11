@@ -57,9 +57,9 @@ pwsh -Command ^
     "}" ^
     "Write-Output ('文件上传到Gist完成！	URL: https://gist.github.com/' + $gistId)" ^
 
-	"Write-Output ('')" ^
+    "Write-Output ('')" ^
 
-	"Write-Output ('请保留你gistId：	' + $gistId + '	填入代码以便下次上传文件！')" ^
+    "Write-Output ('请保留你gistId：	' + $gistId + '	填入代码以便下次上传文件！')" ^
 	
 endlocal
 echo.
